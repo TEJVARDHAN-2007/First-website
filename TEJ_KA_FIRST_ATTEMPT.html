@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Tours &amp; Updates | First Model</title>
+    <meta name="description" content="Latest updates, stadium concert tours, and official social channels.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="title">FIRST MODEL</h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Spotlight Card -->
+        <section class="hero-card">
+            <div class="hero-content">
+                <span class="badge">Exclusive Spotlight</span>
+                <h1>LATEST ANIRUDH RELEASE</h1>
+                <p>
+                    Experience the electrifying soundscapes from recent blockbuster soundtracks. Stream the brand new album master cuts or secure your passes for the live stadium arena tour.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button type="button" class="btn" onclick="alert('Now playing preview of latest album track!')">
+                        &#9658; PLAY LATEST TRACK
+                    </button>
+                    <a href="store.html" class="btn btn-secondary">GET VINYL &amp; ALBUM</a>
+                </div>
+            </div>
+            <div>
+                <img src="./about_files/OIP.UfnNltv9DFrv5jvgPDzrOAHaHe" alt="Anirudh Ravichander" class="anirudhphoto">
+            </div>
+        </section>
+
+        <!-- Tour Section -->
+        <div style="margin-top: 3rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <span class="badge">Live Performance</span>
+                    <h2 style="font-size: 2rem; margin-top: 0.3rem;">STADIUM ARENA TOURS</h2>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Tickets selling fast &bull; Limited VIP packages</p>
+            </div>
+
+            <div class="tour-list">
+                <div class="tour-row">
+                    <div class="tour-date">JULY 16</div>
+                    <div class="tour-venue">
+                        <strong>GACHIBOWLI STADIUM</strong>
+                        <div style="color: var(--text-muted); font-size: 0.85rem;">Hyderabad &bull; Main Arena</div>
+                    </div>
+                    <span class="tour-time">TONIGHT 9:00 PM</span>
+                    <button type="button" class="btn btn-sm" onclick="bookTicket('July 16 - Gachibowli Stadium')">BOOK TICKETS</button>
+                </div>
+
+                <div class="tour-row">
+                    <div class="tour-date">AUGUST 16</div>
+                    <div class="tour-venue">
+                        <strong>RAJIV GANDHI STADIUM</strong>
+                        <div style="color: var(--text-muted); font-size: 0.85rem;">Hyderabad &bull; Center Stage</div>
+                    </div>
+                    <span class="tour-time">TONIGHT 9:00 PM</span>
+                    <button type="button" class="btn btn-sm" onclick="bookTicket('August 16 - Rajiv Gandhi Stadium')">BOOK TICKETS</button>
+                </div>
+
+                <div class="tour-row">
+                    <div class="tour-date">SEPTEMBER 16</div>
+                    <div class="tour-venue">
+                        <strong>CHINNASWAMY STADIUM</strong>
+                        <div style="color: var(--text-muted); font-size: 0.85rem;">Bengaluru &bull; Grand Finale</div>
+                    </div>
+                    <span class="tour-time">TONIGHT 9:00 PM</span>
+                    <button type="button" class="btn btn-sm" onclick="bookTicket('September 16 - Chinnaswamy Stadium')">BOOK TICKETS</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-inner">
+            <p class="footer-brand">&copy; 2026 FIRST MODEL &bull; Created by Developer Tej</p>
+            <ul class="social-links">
+                <li><a class="social-link" href="https://www.youtube.com" target="_blank" title="YouTube"><img src="https://www.bing.com/th/id/OIP.-xA0UCv0Pnve6UaS_FLIDgHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" alt="YouTube"></a></li>
+                <li><a class="social-link" href="https://www.whatsapp.com" target="_blank" title="WhatsApp"><img src="https://www.bing.com/th/id/OIP.MYtqYW1OWJODbr1UBzfeowHaEn?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" alt="WhatsApp"></a></li>
+                <li><a class="social-link" href="https://www.instagram.com" target="_blank" title="Instagram"><img src="https://www.bing.com/th/id/OIP.7vfM_K66FMSrGovHI_839gHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function bookTicket(concert) {
+            alert('Tickets for ' + concert + ' have been selected! Proceeding to seat selection.');
+        }
+    </script>
+    <script src="balloons.js"></script>
+</body>
+</html>
